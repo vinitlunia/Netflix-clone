@@ -63,6 +63,8 @@ nav button {
    flex-direction: column;
    font-family: 'Martel Sans', sans-serif;
    gap: 23px;
+
+
 }
 
 .box1 > :first-child {
@@ -307,49 +309,50 @@ section.first>div :nth-child(2) {
 
 
 
-/* For Medium Screens (768px - 1199px) */
 @media (max-width: 1199px) and (min-width: 768px) {
 
-   /* Adjusting the layout for medium screens */
    section.first {
-      max-width: 70vw; /* Expand to use more available space */
-      flex-direction: row; /* Stack content vertically */
+      max-width: 70vw; 
+      flex-direction: row; 
    }
 
    section.first>div {
       padding: 20px 0px;
    }
+}
+@media screen and (max-width:1300px) {
+  
+   .sec-img Img{
+      width: 305px;
+   }
 
    section.first>div :first-child {
-      font-size: 26px; /* Reduce font size */
+      font-size: 36px; 
    }
 
    section.first>div :nth-child(2) {
-      font-size: 15px; /* Slightly smaller font for medium screens */
+      font-size: 20px; 
    }
 
-   /* Adjust the image and video in sec-img */
    .sec-img Img {
-      width: 400px; /* Scale the image down for medium screens */
+      width: 400px; 
    }
 
    .sec-img video {
-      width: 400px; /* Match the video size to the image */
-      top: 30px; /* Adjust the positioning */
+      width: 400px;
+      top: 47px; 
       right: 0px;
    }
  
 }
 
-/* For Small Screens (Below 768px) */
 @media (max-width: 767px) {
 
-   /* Adjusting layout for small screens */
    section.first {
-      max-width: 70vw; /* Use full screen width */
-      padding: 0 20px; /* Add some side padding */
+      max-width: 70vw; 
+      padding: 0 20px; 
       flex-direction: row;
-      text-align: start; /* Center align content */
+      text-align: start; 
    }
 
    section.first>div {
@@ -357,28 +360,26 @@ section.first>div :nth-child(2) {
    }
 
    section.first>div :first-child {
-      font-size: 28px; /* Reduce font size further for small screens */
+      font-size: 28px; 
    }
 
    section.first>div :nth-child(2) {
-      font-size: 13px; /* Smaller font for smaller screens */
+      font-size: 13px; 
    }
 
-   /* Adjust the image and video for small screens */
    .sec-img Img {
-      width: 250px; /* Further reduce image size */
+      width: 250px; 
    }
 
    .sec-img video {
-      width: 250px; /* Match video size with image */
-      top: 20px; /* Adjust positioning for smaller screens */
+      width: 250px; 
+      top: 20px; 
       right: 0px;
    }
   
    
 }
 
-/* For Extra Small Screens (Below 435px) */
 @media (max-width: 435px) {
 
    section.first {
@@ -387,15 +388,15 @@ section.first>div :nth-child(2) {
    }
 
    section.first>div :first-child {
-      font-size: 20px; /* Even smaller font size for extra small screens */
+      font-size: 20px; 
    }
 
    section.first>div :nth-child(2) {
-      font-size: 10px; /* Adjust smaller */
+      font-size: 10px; 
    }
 
    .sec-img Img {
-      width: 200px; /* Make the image smaller */
+      width: 200px; 
    }
 
    .sec-img video {
