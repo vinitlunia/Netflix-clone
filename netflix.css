@@ -12,7 +12,6 @@ body {
    height: 200vh;
 }
 
-/* Base styles */
 .main {
    background-image: url("./netflix.jpg");
    background-repeat: no-repeat;
@@ -64,7 +63,6 @@ nav button {
    flex-direction: column;
    font-family: 'Martel Sans', sans-serif;
    gap: 23px;
-   /* padding: 23px; */
 }
 
 .box1 > :first-child {
@@ -87,7 +85,7 @@ nav button {
 }
 
 .btn {
-   padding: 5px;
+   padding: 10px;
    opacity: 0.4;
    background-color: black;
    color: white;
@@ -97,7 +95,7 @@ nav button {
 }
 
 .btn-rd-sm {
-   padding: 5px;
+   padding: 10px;
    background-color: red;
    color: white;
    font-size: large;
@@ -122,16 +120,17 @@ nav button {
    }
 
    .box1 > :first-child {
-      font-size: 60px;
+      font-size: 50px;
    }
 
    .box1 :nth-child(2),
    .box1 :nth-child(3) {
-      font-size: 30px;
+      font-size: 20px;
    }
 
    .btn, .btn-rd-sm {
       font-size: medium;
+
    }
 }
 
@@ -149,20 +148,20 @@ nav button {
       height: fit-content;
       gap: 10px;
       position: relative;
-      top: 250px;
+      top: 100px;
    }
 
    .box1 > :first-child {
-      font-size: 60px;
+      font-size: 40px;
    }
 
    .box1 :nth-child(2),
    .box1 :nth-child(3) {
-      font-size: 25px;
+      font-size: 15px;
    }
 
    .btn, .btn-rd-sm {
-      font-size: medium;
+      font-size: small;
    }
 }
 
@@ -182,18 +181,18 @@ nav button {
       gap: 15px;
       height: fit-content;
       position: relative;
-      top: 150px;
+      top: 50px;
       
      
    }
 
    .box1 > :first-child {
-      font-size: 60px;
+      font-size: 35px;
    }
 
    .box1 :nth-child(2),
    .box1 :nth-child(3) {
-      font-size: 20px;
+      font-size: 15px;
    }
 
    .btn, .btn-rd-sm {
@@ -203,7 +202,56 @@ nav button {
 
    .inp {
       width: 200px;
-      font-size: medium;
+      font-size: small;
+   }
+}
+
+
+
+@media (max-width: 435px) {
+   .main  {
+      background-size: cover;
+   }
+ 
+   nav {
+      max-width: 90vw;
+      flex-direction: row;
+      height: 10%;
+   }
+   nav button{
+      width: 80px;
+   }
+
+  
+
+   .box1 {
+      padding: 15px;
+      gap: 15px;
+      height: fit-content;
+      position: relative;
+      top: 40px;
+
+      
+     
+   }
+
+   .box1 > :first-child {
+      font-size: 30px;
+   }
+
+   .box1 :nth-child(2),
+   .box1 :nth-child(3) {
+      font-size: 10px;
+   }
+
+   .btn, .btn-rd-sm {
+      font-size: small;
+      padding: 13px;
+   }
+
+   .inp {
+      width: 150px;
+      font-size: small;
    }
 }
 
@@ -227,12 +275,12 @@ section.first>div {
 }
 
 section.first>div :first-child {
-   font-size: 48px;
+   font-size: 40px;
    font-weight: bolder;
 }
 
 section.first>div :nth-child(2) {
-   font-size: 24px;
+   font-size: 18px;
    font-weight: bolder;
 }
 
@@ -256,22 +304,122 @@ section.first>div :nth-child(2) {
 
 }
 
-@media screen and (max-width:1300px) {
-   section.first{
-      /* flex-wrap: wrap; */
 
+
+
+/* For Medium Screens (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+
+   /* Adjusting the layout for medium screens */
+   section.first {
+      max-width: 70vw; /* Expand to use more available space */
+      flex-direction: row; /* Stack content vertically */
    }
-   .sec-img Img{
-      width: 305px;
+
+   section.first>div {
+      padding: 20px 0px;
    }
-   .sec-img video{
-      width: 305px;
+
+   section.first>div :first-child {
+      font-size: 26px; /* Reduce font size */
    }
+
+   section.first>div :nth-child(2) {
+      font-size: 15px; /* Slightly smaller font for medium screens */
+   }
+
+   /* Adjust the image and video in sec-img */
+   .sec-img Img {
+      width: 400px; /* Scale the image down for medium screens */
+   }
+
+   .sec-img video {
+      width: 400px; /* Match the video size to the image */
+      top: 30px; /* Adjust the positioning */
+      right: 0px;
+   }
+ 
+}
+
+/* For Small Screens (Below 768px) */
+@media (max-width: 767px) {
+
+   /* Adjusting layout for small screens */
+   section.first {
+      max-width: 70vw; /* Use full screen width */
+      padding: 0 20px; /* Add some side padding */
+      flex-direction: row;
+      text-align: start; /* Center align content */
+   }
+
+   section.first>div {
+      padding: 10px 0px;
+   }
+
+   section.first>div :first-child {
+      font-size: 28px; /* Reduce font size further for small screens */
+   }
+
+   section.first>div :nth-child(2) {
+      font-size: 13px; /* Smaller font for smaller screens */
+   }
+
+   /* Adjust the image and video for small screens */
+   .sec-img Img {
+      width: 250px; /* Further reduce image size */
+   }
+
+   .sec-img video {
+      width: 250px; /* Match video size with image */
+      top: 20px; /* Adjust positioning for smaller screens */
+      right: 0px;
+   }
+  
+   
+}
+
+/* For Extra Small Screens (Below 435px) */
+@media (max-width: 435px) {
+
+   section.first {
+      max-width: 70vw;
+      padding: 0 10px;
+   }
+
+   section.first>div :first-child {
+      font-size: 20px; /* Even smaller font size for extra small screens */
+   }
+
+   section.first>div :nth-child(2) {
+      font-size: 10px; /* Adjust smaller */
+   }
+
+   .sec-img Img {
+      width: 200px; /* Make the image smaller */
+   }
+
+   .sec-img video {
+      width: 200px;
+      top: 10px;
+      right: 0px;
+   }
+  
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1300px) {
+  
    
 }
 .faq h2 {
    text-align: center;
-   font-size: 48px;
+   font-size: 38px;
    font-weight: bold;
 }
 
@@ -303,7 +451,7 @@ section.first>div :nth-child(2) {
 @media screen and (max-width: 1300px) {
    
    .faqbox{
-      width: 80%;
+      width: 70%;
    }
    
 }
@@ -335,16 +483,16 @@ section.first>div :nth-child(2) {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    color: white;
-   max-width: 60vw;
+   max-width: 90vw;
    margin: auto;
    padding: 50px 0px;
    
 }
 
-@media screen and (max-width:1300px){
+@media screen and (min-width:1300px){
    .footer-class{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       color: white;
       gap: 30px;
    }
