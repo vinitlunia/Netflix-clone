@@ -183,13 +183,12 @@ nav button {
       gap: 15px;
       height: fit-content;
       position: relative;
-      top: 50px;
       
      
    }
 
    .box1 > :first-child {
-      font-size: 35px;
+      font-size: 40px;
    }
 
    .box1 :nth-child(2),
@@ -231,7 +230,7 @@ nav button {
       gap: 15px;
       height: fit-content;
       position: relative;
-      top: 40px;
+      /* top: 60px; */
 
       
      
@@ -243,12 +242,12 @@ nav button {
 
    .box1 :nth-child(2),
    .box1 :nth-child(3) {
-      font-size: 10px;
+      font-size: 12px;
    }
 
    .btn, .btn-rd-sm {
       font-size: small;
-      padding: 13px;
+      padding: 18px;
    }
 
    .inp {
