@@ -12,7 +12,6 @@ body {
    height: 200vh;
 }
 
-/* Base styles */
 .main {
    background-image: url("./netflix.jpg");
    background-repeat: no-repeat;
@@ -64,7 +63,7 @@ nav button {
    flex-direction: column;
    font-family: 'Martel Sans', sans-serif;
    gap: 23px;
-   /* padding: 23px; */
+
 }
 
 .box1 > :first-child {
@@ -257,10 +256,7 @@ section.first>div :nth-child(2) {
 }
 
 @media screen and (max-width:1300px) {
-   section.first{
-      /* flex-wrap: wrap; */
-
-   }
+  
    .sec-img Img{
       width: 305px;
    }
