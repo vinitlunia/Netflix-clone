@@ -63,7 +63,7 @@ nav button {
    flex-direction: column;
    font-family: 'Martel Sans', sans-serif;
    gap: 23px;
-
+   top: 80px;
 
 }
 
@@ -119,6 +119,9 @@ nav button {
 @media (min-width: 1200px) {
    .main {
       background-size: cover;
+   }
+   .box1{
+      top: 0px;
    }
 
    .box1 > :first-child {
@@ -247,7 +250,7 @@ nav button {
 
    .btn, .btn-rd-sm {
       font-size: small;
-      padding: 18px;
+      padding: 10px;
    }
 
    .inp {
